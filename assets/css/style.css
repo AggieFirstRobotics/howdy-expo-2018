@@ -1,0 +1,47 @@
+p {line-height: 2rem;}
+
+body {
+  background:url(/assets/img/hero.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+}
+#hero {
+  background: url(/assets/img/hero.jpg);
+  height:100vh;
+  background-size: cover;
+  z-index: -1;
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fixed #hero {position:fixed;}
+.fixed #secondary {margin-top:100vh;}
+
+.pretty-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.pretty-container .section {width: 100%;}
+
+footer.page-footer {margin: 0;}
+
+.maroon {
+  background: #500000 !important;
+}
+
+.maroon-text {
+  color: #500000 !important;
+}
+
+.scroller {
+  transition: color 0.5s ease;
+  font-size:2em;
+}
+
+.scroller:hover {
+  color:red !important;
+}
