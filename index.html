@@ -8,21 +8,21 @@
 		<link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 		<link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
-	<body>
+	<body class="no-js">
 		<header class="navbar-fixed">
 			<nav class="maroon white-text" role="navigation">
 				<div class="nav-wrapper container white-text">
-					<a id="logo-container" href="#" class="brand-logo">Logo</a>
+					<a id="logo-container" href="#" class="brand-logo notake smooth-scroll"><img src="/assets/img/logo.png" alt="Howdy Expo Logo" /></a>
 					<ul class="right hide-on-med-and-down white-text">
-						<li><a href="#">Event Details</a></li>
-						<li><a href="#">Volunteer Registration</a></li>
-						<li><a href="#">Sponsors</a></li>
+						<li><a class="smooth-scroll" href="#event-details">Event Details</a></li>
+						<li><a class="smooth-scroll" href="#volunteer-registration">Volunteer Registration</a></li>
+						<li><a class="smooth-scroll" href="#sponsors">Sponsors</a></li>
 					</ul>
 
-					<ul id="nav-mobile" class="side-nav">
-						<li><a href="#">Event Details</a></li>
-						<li><a href="#">Volunteer Registration</a></li>
-						<li><a href="#">Sponsors</a></li>
+					<ul id="nav-mobile" class="side-nav hide-on-med-and-up">
+						<li><a class="smooth-scroll" href="#event-details">Event Details</a></li>
+						<li><a class="smooth-scroll" href="#volunteer-registration">Volunteer Registration</a></li>
+						<li><a class="smooth-scroll" href="#sponsors">Sponsors</a></li>
 					</ul>
 					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				</div>
@@ -36,19 +36,19 @@
 					<h5 class="header col s12 light white-text">Catchy catchphrase</h5>
 				</div>
 				<div class="row center scroll-parent">
-					<h5 class="center"><a class="maroon-text scroller" href="#scroll"><i class="material-icons">arrow_downward</i></a></h5>
+					<h5 class="center"><a class="maroon-text smooth-scroll" id="downer" href="#event-details"><i class="material-icons">arrow_downward</i></a></h5>
 				</div>
 			</div>
 		</div>
 
-		<div class="white" id="secondary">
+		<div class="white linked" id="event-details">
 			<div class="section container">
 				<h1 class="center">Event Details</h1>
 				<p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 			</div>
 		</div>
 
-		<div class="pretty-container valign-wrapper">
+		<div class="pretty-container valign-wrapper" id="volunteer-registration">
 			<div class="section no-pad-bot">
 				<div class="container">
 					<div class="row center">
@@ -57,13 +57,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="white" id="secondary">
+		<div class="white">
 			<div class="section container">
 				<p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 			</div>
 		</div>
 
-		<div class="pretty-container valign-wrapper">
+		<div class="pretty-container valign-wrapper" id="sponsors">
 			<div class="section no-pad-bot">
 				<div class="container">
 					<div class="row center">
@@ -72,13 +72,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="white">
+		<div class="white" id="sponsors">
 			<div class="section container">
 				<div class="row">
 					<div class="col s12 center">
-						<h3><i class="mdi-content-send brown-text"></i></h3>
-						<h4>Contact Us</h4>
-						<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+						<p class="left-align light flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 					</div>
 				</div>
 			</div>

@@ -5,15 +5,17 @@ body {
   background-size:cover;
   background-attachment: fixed;
 }
+
 #hero {
   background: url(/assets/img/hero.jpg);
   height:100vh;
   background-size: cover;
   z-index: -1;
-  width: 99vw;
+  width: 98vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -64px;
 }
 
 .fixed #hero {position:fixed;}
@@ -25,23 +27,34 @@ body {
   height: auto;
   color: rgba(255,255,255,.9);
 }
+
 .pretty-container .section {width: 100%;}
-
 footer.page-footer {margin: 0;}
+.page-footer .footer-copyright{background:rgba(51,51,51,0.3)}
+.maroon {background: #500000 !important;}
+.maroon-text {color: #500000 !important;}
+#downer {transition: color 0.5s ease;}
 
-.maroon {
-  background: #500000 !important;
+#downer i {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-.maroon-text {
-  color: #500000 !important;
+#downer:hover {color:#300000 !important;}
+
+.brand-logo {
+  display:flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:64px;
 }
 
-.scroller {
-  transition: color 0.5s ease;
-  font-size:2em;
+@media (max-width:600px) {
+  .brand-logo img{
+    height:55px;
+  }
 }
 
-.scroller:hover {
-  color:red !important;
-}
+.brand-logo img {max-height: 64px;}
+.no-js > .linked:target {padding:64px 0;}
