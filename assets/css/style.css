@@ -1,17 +1,18 @@
-p {line-height: 2rem;}
+ {line-height: 2rem;}
 
 body {
-  background:url(/assets/img/hero.jpg);
+  background:url(/assets/img/background.jpg);
   background-size:cover;
   background-attachment: fixed;
 }
 
 #hero {
   background: url(/assets/img/hero.jpg);
+  background-position-y: -100px;
   height:100vh;
   background-size: cover;
   z-index: -1;
-  width: 98vw;
+  width: 99.1vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,15 +56,16 @@ footer.page-footer {margin: 0;}
     height:55px;
   }
 }
+@media (min-width: 600px) {
+  #event-info .row ul {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .brand-logo img {max-height: 64px;}
 .no-js > .linked:target {padding:64px 0;}
 
 .page-footer {padding:10px 0;}
-
-#event-info .row ul {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
